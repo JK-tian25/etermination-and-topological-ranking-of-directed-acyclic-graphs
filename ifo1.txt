@@ -1,0 +1,1 @@
+10 A B C D E F G H I J 12 A E A C E F C F F G F H H I J H D J B C J F C D 
