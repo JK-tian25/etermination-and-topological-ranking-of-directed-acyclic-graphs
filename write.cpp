@@ -1,6 +1,11 @@
 #include "graph.h"
+<<<<<<< HEAD
+void writeFile(orthoList e) {
+	FILE* fp = fopen("ifo.txt", "w");
+=======
 void writeFile(orthoList e,char* FILEname) {
 	FILE* fp = fopen(FILEname, "w");
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2
 	if (!fp)
 	{
 		perror("无法打开文件");
@@ -19,5 +24,9 @@ void writeFile(orthoList e,char* FILEname) {
 		}
 	}
 	fclose(fp);
+<<<<<<< HEAD
+	printf("图已保存到文件 %s\n"); 
+=======
 	printf("图已保存到文件 %s\n", FILEname); 
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2
 }

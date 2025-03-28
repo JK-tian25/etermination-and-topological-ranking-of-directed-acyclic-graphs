@@ -1,8 +1,18 @@
+<<<<<<< HEAD
+4
+=======
 10
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2
 A
 B
 C
 D
+<<<<<<< HEAD
+3
+A B
+B C
+C D
+=======
 E
 F
 G
@@ -22,3 +32,4 @@ C D
 D J
 J H
 J F
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2

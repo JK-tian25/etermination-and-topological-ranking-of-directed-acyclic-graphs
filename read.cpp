@@ -1,8 +1,15 @@
 #include "graph.h"
+<<<<<<< HEAD
+int ReadFile(orthoList& e)
+{
+	
+	FILE* fp = fopen("ifo.txt", "r");
+=======
 int ReadFile(orthoList& e,char *FILEname)
 {
 	
 	FILE* fp = fopen(FILEname, "r");
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2
 	if (!fp)
 	{
 		perror("无法打开文件");

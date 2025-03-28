@@ -27,6 +27,19 @@ typedef struct
 	VexNode nodes[N]; //顶点数组
 	int vexNum, arcNum;   //顶点数，弧数
 }orthoList;
+<<<<<<< HEAD
+int ReadFile(orthoList& e);
+int toplogical_sort_forward(orthoList e, int* sorted, int* sorted_size);
+void toplogical_sort_backward(orthoList e, int* sorted, int* sorted_size);
+void writeFile(orthoList e);
+int find(orthoList e, char* name);
+void creatFile();
+void add_edge(orthoList& e);
+void deleteEdge(orthoList &e,int tailVex, int headVex,int VVV);
+void addVertex(orthoList &e);
+void deleteVertex(orthoList &e);
+void menu();
+=======
 int ReadFile(orthoList& e,char* FILEname);
 int toplogical_sort_forward(orthoList e, int* sorted, int* sorted_size);
 void toplogical_sort_backward(orthoList e, int* sorted, int* sorted_size);
@@ -37,3 +50,4 @@ void add_edge(orthoList& e, char* FILEname);
 void deleteEdge(orthoList &e, char* FILEname, int tailVex, int headVex,int VVV);
 void addVertex(orthoList &e, char* FILEname);
 void deleteVertex(orthoList &e, char* FILEname);
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2

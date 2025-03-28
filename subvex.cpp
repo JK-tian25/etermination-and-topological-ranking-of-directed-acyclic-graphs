@@ -1,5 +1,9 @@
 #include "graph.h"
+<<<<<<< HEAD
+void deleteVertex(orthoList &e) {
+=======
 void deleteVertex(orthoList &e,char* FILEname) {
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2
     char name[50];
     printf("请输入顶点的名字：\n");
     scanf("%s", name);
@@ -15,7 +19,11 @@ void deleteVertex(orthoList &e,char* FILEname) {
     while (currOut != NULL) {
         int headVex = currOut->headVex;
         ArcNode* nextOut = currOut->tLink;
+<<<<<<< HEAD
+        deleteEdge(e,vexIndex, currOut->headVex,num);
+=======
         deleteEdge(e, FILEname,vexIndex, currOut->headVex,num);
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2
         currOut = nextOut;
     }
 
@@ -24,7 +32,11 @@ void deleteVertex(orthoList &e,char* FILEname) {
     while (currIn != NULL) {
         int tailVex = currIn->tailVex;
         ArcNode* nextIn = currIn->hLink;
+<<<<<<< HEAD
+        deleteEdge(e, currIn->tailVex, vexIndex,num);
+=======
         deleteEdge(e, FILEname, currIn->tailVex, vexIndex,num);
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2
         currIn = nextIn;
     }
 
@@ -48,5 +60,9 @@ void deleteVertex(orthoList &e,char* FILEname) {
     }
     e.vexNum--;
 
+<<<<<<< HEAD
+    writeFile(e);
+=======
     writeFile(e,FILEname);
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2
 }

@@ -167,21 +167,29 @@ int main()
 	while (1)
 	{
 		int choice;
+<<<<<<< HEAD
+		menu();
+=======
 		printf("选项1：选择图进行检验。\n");
 		printf("选项2：创建一个新的图。\n");
 		printf("选项3：选择图进行添加边。\n");
 		printf("选项4：选择图进行删除边。\n");
 		printf("选项5：选择图进行添加点。\n");
 		printf("选项6：选择图进行删除点。\n");
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2
 		scanf("%d", &choice);
 
 		if (choice == 1)
 		{
 			orthoList image;
+<<<<<<< HEAD
+			if (ReadFile(image))
+=======
 			char FILEname[100];
 			printf("请选择要检验的图的文件名：\n");
 			scanf("%s", FILEname);
 			if (ReadFile(image,FILEname))
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2
 			{
 				int sorted[N], sorted_size;
 				int is_acyclic = toplogical_sort_forward(image, sorted, &sorted_size);
@@ -216,6 +224,17 @@ int main()
 		}
 		else if (choice == 2)
 			creatFile();
+<<<<<<< HEAD
+		else if (choice == 0)
+			exit(0);
+		else if (choice == 3)
+		{
+				orthoList image;
+			if (ReadFile(image))
+				{
+				add_edge(image);
+				}
+=======
 		else if (choice == 3)
 		{
 			orthoList image;
@@ -226,10 +245,48 @@ int main()
 			{
 				add_edge(image,FILEname);
 			}
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2
 		}
 		else if (choice == 4)
 		{
 			orthoList image ;
+<<<<<<< HEAD
+			int num = 0;
+			if (ReadFile(image))
+				{
+					char hname[50], tname[50];
+					printf("请输入弧头：\n");
+					scanf("%s", hname);
+					printf("请输入弧尾：\n");
+					scanf("%s", tname);
+					int tailVex = find(image, tname);
+					int headVex = find(image, hname);
+				deleteEdge(image,tailVex, headVex,num);
+				}
+		}
+		else if (choice == 5)
+		{
+				orthoList image;
+				if (ReadFile(image))
+				{
+					addVertex(image);
+				}
+		}
+		else if(choice==6)
+		{
+				orthoList image;
+				if (ReadFile(image))
+				{
+					deleteVertex(image);
+				}
+		}
+		else
+		{
+			printf("输入错误，请重新输入。\n");
+		}
+	}
+}
+=======
 			char FILEname[100];
 			int num = 0;
 			printf("请选择要删除边的图的文件名：\n");
@@ -271,3 +328,4 @@ int main()
 	}
 }
 
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2

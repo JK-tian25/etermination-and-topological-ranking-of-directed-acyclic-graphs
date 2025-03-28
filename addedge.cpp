@@ -1,5 +1,9 @@
 #include "graph.h"
+<<<<<<< HEAD
+void add_edge(orthoList& e) {
+=======
 void add_edge(orthoList& e, char* FILEname) {
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2
         char hname[50], tname[50];
         ArcNode* newArc = (ArcNode*)malloc(sizeof(ArcNode));
         printf("请输入弧头：\n");
@@ -21,7 +25,11 @@ void add_edge(orthoList& e, char* FILEname) {
         e.nodes[tailVex].out_degree++;
         e.nodes[headVex].in_degree++;   
         e.arcNum++;
+<<<<<<< HEAD
+        writeFile(e);
+=======
         writeFile(e,FILEname);
+>>>>>>> dc1b5ca53f8ceef120c86c6f3b22249f59be0fc2
         printf("添加成功。\n");
         /*return;*/
     
